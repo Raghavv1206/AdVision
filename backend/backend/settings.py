@@ -176,7 +176,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # FRONTEND URL CONFIGURATION (FROM ENV VARIABLE)
 # ============================================================================
 # Primary frontend URL from environment variable
-FRONTEND_URL = os.getenv('FRONTEND_URL', 'http://localhost:5173')
+FRONTEND_URL = os.getenv('FRONTEND_URL')
+# , 'http://localhost:5173'
 
 # Additional allowed origins for development
 ADDITIONAL_FRONTEND_URLS = os.getenv('ADDITIONAL_FRONTEND_URLS', '').split(',')
